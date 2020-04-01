@@ -33,7 +33,7 @@
                
                 @foreach($posts as $post)
                 <tr>
-                <td>{{$post->img}}</td>
+                <td><img class="img img-thumbnail" width="80px" src="{{ '/storage/'.$post->img }}" alt="{{ $post->title }}"></td>
                     <td> {{$post->title}}  </td>
                     <td>
                         <a class="btn btn-sm btn-white float-left " href="{{route('admin.posts.show', $post->id)}}">
