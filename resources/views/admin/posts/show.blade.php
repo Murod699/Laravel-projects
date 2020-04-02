@@ -10,6 +10,8 @@
     </div>
     <div class="card-body">
         <h3>{{$post->title}}</h3>
+        <p><img  width="200px" src="{{ '/storage/'.$post->thumb }}" alt="{{ $post->title }}">
+        </p>
         <b>Qisqacha: </b>
         <p>
             {{$post->short}}
@@ -18,8 +20,8 @@
         <p>
             {{$post->content}}
         </p>
-        {{$post->created_at->format('H:i d/m/Y')}} <br>
-        {{$post->updated_at->format('H:i d/m/Y')}}
+        <b>Yaratildi: </b>{{$post->created_at->format('H:i d/m/Y')}} <br>
+        <b>O'zgartirildi: </b>{{$post->updated_at->format('H:i d/m/Y')}}
     </div>
 </div>
 @endsection

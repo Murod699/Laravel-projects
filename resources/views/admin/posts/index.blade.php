@@ -25,7 +25,7 @@
 
         <table class="table table-bordered">
             <thead>
-                <th>Rasm</th>
+                <th width="100px">Rasm</th>
                 <th>sarlavha</th>
                 <th width="130px">amallar</th>
             </thead>
@@ -33,7 +33,9 @@
                
                 @foreach($posts as $post)
                 <tr>
-                <td><img class="img img-thumbnail" width="80px" src="{{ '/storage/'.$post->img }}" alt="{{ $post->title }}"></td>
+                    <td>
+                <img class="img img-thumbnail" width="80px" src="{{ '/storage/'.$post->thumb }}" alt="{{ $post->title }}">
+                    </td>
                     <td> {{$post->title}}  </td>
                     <td>
                         <a class="btn btn-sm btn-white float-left " href="{{route('admin.posts.show', $post->id)}}">

@@ -18,7 +18,7 @@
             </div>
             <div class="form-group">
                 <label for="">Rasm</label>
-                <input class="form-control" name="picture" type="file">
+                <input class="form-control" name="img" type="file">
             </div>
             <div class="form-group">
                 <img src="/storage/{{$post->thumb}}" width="200px" class="img img-thumbnail" alt="">
