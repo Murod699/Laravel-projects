@@ -18,11 +18,24 @@ class SiteController extends Controller
         return view('contact');
     }
     public function news(){
-    $posts = Post::orderBy('id', 'DESC')->paginate(2);
+    // $posts = Post::orderBy('id', 'DESC')->paginate(2);
+    $posts = Post::latest()->paginate(2);
     $links = $posts->links();
+
     return view('news', compact('posts', 'links'));
+    
     }
-    public function newsMore(){
-        return view('newsMore');
+    public function newsMore($id){
+        
+        $post = Post::findOrFail($id);
+
+        $post->increment('views');
+
+        $most_viewed = Post::mostViews()->get();
+
+        return view('newsMore', [
+            'post'=>$post,
+            'most_posts' => $most_viewed
+        ]);
     }
 }

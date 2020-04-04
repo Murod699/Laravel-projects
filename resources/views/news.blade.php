@@ -27,11 +27,12 @@
             <div class="row mb-5">
               <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
                 <div class="h-entry">
-                  <img src="images/img_6.jpg" alt="Image" class="img-fluid">
-                  <a href="{{route('news.more', '$post->$id') }}">
+                  <img src="/storage/{{$post->thumb}}" alt="Image" class="img-fluid">
+                  <a href="{{route('news.more', $post->id) }}">
                     <h2 class="font-size-regular">{{$post->title}}</h2>
                   </a>
                   <div class="meta mb-4">
+                    <a href="#"><i class="fa fa-eye"></i>{{$post->views}}</a>              
                     <span class="mx-2">&bullet;</span>
                     {{$post->created_at->format('d/m/y')}}
                     <span class="mx-2">&bullet;</span>
@@ -62,17 +63,6 @@
                 <li class="mb-2"><a href="#">Natus eligendi nobis</a></li>
               </ul>
             </div>
-
-            <div class="mb-5">
-              <h3 class="h5 text-black mb-3">Recent Comments</h3>
-              <ul class="list-unstyled">
-                <li class="mb-2"><a href="#">Joefrey</a> <em>in</em> <a href="#">Lorem ipsum dolor sit amet</a></li>
-                <li class="mb-2"><a href="#">Joefrey</a> <em>in</em> <a href="#">Quaerat rerum voluptatibus veritatis</a></li>
-                <li class="mb-2"><a href="#">Joefrey</a> <em>in</em> <a href="#">Maiores sapiente veritatis reprehenderit</a></li>
-                <li class="mb-2"><a href="#">Joefrey</a> <em>in</em> <a href="#">Natus eligendi nobis</a></li>
-              </ul>
-            </div>
-
           </div>
 
         </div>
