@@ -8,7 +8,11 @@ use App\Post;
 class SiteController extends Controller
 {
     public function home(){
-        return view('home');
+    $posts = Post::latest()->paginate(3);
+    $links = $posts->links();
+
+    return view('home', compact('posts', 'links'));
+        
 
     }
     public function services(){

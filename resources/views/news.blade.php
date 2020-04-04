@@ -22,8 +22,9 @@
     <section class="site-section">
       <div class="container">
         <div class="row">
-          @foreach($posts as $post)
+          
           <div class="col-md-8">
+          @foreach($posts as $post)
             <div class="row mb-5">
               <div class="col-md-6 col-lg-6 mb-4 mb-lg-4">
                 <div class="h-entry">
@@ -42,8 +43,9 @@
                 </div> 
               </div>
             </div>
+            @endforeach
           </div> 
-          @endforeach
+          
           <div class="col-md-3 ml-auto">
             <div class="mb-5">
               <h3 class="h5 text-black mb-3">Search</h3>
