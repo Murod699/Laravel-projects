@@ -1,4 +1,4 @@
-@extends('layouts/app', ['title' => "news"])
+@extends('layouts.app', ['title' => 'Qidiruv'])
 
 @section('content')
 <div class="site-blocks-cover inner-page-cover overlay" style="background-image: url(images/hero_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -24,8 +24,21 @@
         <div class="row">
           
           <div class="col-md-8">
-          @foreach($posts as $post)
-            @include('parts._news-item', ['post' => $post])
+            <div>
+                <form action="{{route('search')}}" method="GET">
+                    <div class="form-group d-flex">
+                        <input type="text" name='key' class="form-control" placeholder="Qidiruv.." value="{{ request()->get('key')}}">
+            
+                    </div>
+                </form>
+            </div>
+            @if(!count($results))
+                <div class="alert alert-primary">
+                 Sizning "{{ request()->get('key')}}" so'rovingiz bo'yicha hech nima topilmadi!
+                </div>
+            @endif
+            @foreach($results as $result)
+            @include('parts._news-item', ['post' => $result])
             @endforeach
             <nav class="blog-pagination justify-content-center d-flex">
             {{ $links }}
