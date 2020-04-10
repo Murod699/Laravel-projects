@@ -33,7 +33,15 @@ Route::post('/feedback', 'SiteController@feedbackStore')->name('contact.store');
 Route::get('/search', 'SiteController@search')->name('search');
 // Admin routes
 Route::namespace('Admin')->middleware('auth')->name('admin.')->prefix('admin')->group(function(){
+    Route::get('/', function(){
+        return redirect()->route('admin.posts.index');
+    })->name('dashboard');
     Route::resource('posts', 'PostsController');
+//Feedback routes
+    Route::get('feedbacks', 'FeedbacksController@index')->name('feedbacks.index');
+    Route::get('feedbacks/{id}/show', 'FeedbacksController@show')->name('feedbacks.show');
+    Route::delete('feedbacks/{id}/delete', 'FeedbacksController@delete')->name('feedbacks.delete');
+        
 });
 Auth::routes();
 
