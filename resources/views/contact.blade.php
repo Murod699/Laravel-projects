@@ -9,8 +9,8 @@
                         
             <div class="row justify-content-center mb-4">
               <div class="col-md-8 text-center">
-                <h1>Contact Us</h1>
-                <p class="lead mb-5">We Make Beautiful Things</p>
+                <h1>Aloqa</h1>
+                <p class="lead mb-5">Sizga xizmat ko`rsatishdan mamnunmiz!</p>
               </div>
             </div>
 
@@ -43,11 +43,11 @@
             </div>
           @endif
               @csrf
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+              <h2 class="h4 text-black mb-5">Biz bilan aloqa</h2> 
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="fname">Name</label>
+                  <label class="text-black" for="fname">F.I.O</label>
                   <input type="text" id="fname" value="{{old('name')}}" name="name" placeholder="Isminggiz..." class="form-control">
                 </div>
                 
@@ -56,7 +56,7 @@
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="email">Email</label> 
+                  <label class="text-black" for="email">Pochta manzilinggiz</label> 
                   <input type="email" id="email" value="{{old('email')}}" name="email" placeholder="e-mailni kiriting..." class="form-control">
                 </div>
               </div>
@@ -64,21 +64,21 @@
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
+                  <label class="text-black" for="subject">Mavzu</label> 
                   <input type="subject" id="subject" value="{{old('subject')}}" name="subject" placeholder="Mavzuni kiriting..." class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
+                  <label class="text-black" for="message">Xabar</label> 
                   <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Xabarni kiriting...">{{old('message')}}</textarea>
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <input type="submit" value="Send Message" class="btn btn-primary btn-md text-white">
+                  <input type="submit" value="Yuborish" class="btn btn-primary btn-md text-white">
                 </div>
               </div>
 
@@ -88,14 +88,14 @@
           <div class="col-md-5">
             
             <div class="p-4 mb-3 bg-white">
-              <p class="mb-0 font-weight-bold">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+              <p class="mb-0 font-weight-bold">Manzil:</p>
+              <p class="mb-4">O`zbekiston Respublikasi,Xorazm viloyati,Urganch shahri,Al-Xorazmiy ko`chasi,TATU Urganch filiali</p>
 
-              <p class="mb-0 font-weight-bold">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+              <p class="mb-0 font-weight-bold">Telefon:</p>
+              <p class="mb-4"><a href="#">+99890 433-36-99</a></p>
 
-              <p class="mb-0 font-weight-bold">Email Address</p>
-              <p class="mb-0"><a href="#">youremail@domain.com</a></p>
+              <p class="mb-0 font-weight-bold">Elektron pochta:</p>
+              <p class="mb-0"><a href="#">murodbek.0338@gmail.com</a></p>
 
             </div>
             

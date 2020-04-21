@@ -41,17 +41,9 @@
         <div class="row">
           <div class="col-md-6">
             <p class="mb-0">
-              <span class="mr-3"><strong>Phone:</strong> <a href="tel://#">+1 292 3293 4238</a></span>
-              <span><strong>Email:</strong> <a href="#">info@yourdomain.com</a></span>
+              <span class="mr-3"><strong>Phone:</strong> <a href="tel://#">+99890 433-36-99</a></span>
+              <span><strong>Email:</strong> <a href="#">murodbek.0338@gmail.com</a></span>
             </p>
-          </div>
-          <div class="col-md-6">
-            <ul class="social-media">
-              <li><a href="#" class="p-2"><span class="icon-facebook"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-twitter"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-instagram"></span></a></li>
-              <li><a href="#" class="p-2"><span class="icon-linkedin"></span></a></li>
-            </ul>
           </div>
         </div>
       </div> 
@@ -62,16 +54,15 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="{{route('home')}}" class="text-black h2 mb-0">Chimper</a></h1>
+            <h1 class="mb-0 site-logo"><a href="{{route('home')}}" class="text-black h2 mb-0">Devcenter.uz</a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
 
               <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li class="active"><a href="{{route('home')}}">Home</a></li>
-                <li><a href="work.html">Work</a></li>
+                <li class="active"><a href="{{route('home')}}">Bosh sahifa</a></li>
                 <li class="has-children">
-                  <a href="{{route('services')}}">Services</a>
+                  <a href="{{route('services')}}">Xizmatlar</a>
                   <ul class="dropdown">
                     <li><a href="{{route('services')}}">Web Applications</a></li>
                     <li><a href="{{route('services')}}">WordPress Dev</a></li>
@@ -79,9 +70,9 @@
                     <li><a href="{{route('services')}}">eCommerce</a></li>
                   </ul>
                 </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="{{route('news')}}">Blog</a></li>
-                <li><a href="{{route('contact')}}">Contact</a></li>
+                <li><a href="about.html">Haqida</a></li>
+                <li><a href="{{route('news')}}">Yangiliklar</a></li>
+                <li><a href="{{route('contact')}}">Aloqa</a></li>
               </ul>
             </nav>
           </div>
@@ -107,37 +98,18 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About Us</h2>
+                <h2 class="footer-heading mb-4">Biz haqimizda</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
               </div>
               <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Features</h2>
+                <h2 class="footer-heading mb-4">Bo'limlar</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Services</a></li>
-                  <li><a href="#">Testimonials</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Haqida</a></li>
+                  <li><a href="#">Xizmatlar</a></li>
+                  <li><a href="{{route('contact')}}">Aloqa</a></li>
                 </ul>
               </div>
-              <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
-                <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-              </div>
             </div>
-          </div>
-          <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
-            <form action="#" method="post">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                  <button class="btn btn-primary text-white" type="button" id="button-addon2">Send</button>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
@@ -145,7 +117,7 @@
             <div class="border-top pt-5">
             <p>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script>  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://devcenter.uz" target="_blank" >Devcenter.uz</a>
             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </p>
             </div>

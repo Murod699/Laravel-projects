@@ -238,7 +238,11 @@
             </div> 
           </div>
         @endforeach
+            
          </div>
+         <nav class="blog-pagination justify-content-center d-flex">
+            {{ $links }}
+            </nav>
       </div>
      
     </section>
