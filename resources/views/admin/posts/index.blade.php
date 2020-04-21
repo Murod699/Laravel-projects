@@ -38,7 +38,7 @@
                 <img class="img img-thumbnail" width="80px" src="{{ '/storage/'.$post->thumb }}" alt="{{ $post->title }}">
                     </td>
                     <td> {{$post->title}}  </td>
-                    <td>{{$post->updated_at->format('H:i d/m/Y')}}</td>
+                    <td>{{$post->created_at->format('H:i d/m/Y')}}</td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
                          <a target="_blank" href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">
@@ -64,7 +64,9 @@
 
             </tbody>
         </table>
-
+        <nav class="blog-pagination justify-content-center d-flex">
+            {{ $posts->links() }}
+            </nav>
     </div>
 </div>
 

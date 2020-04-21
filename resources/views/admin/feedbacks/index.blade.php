@@ -9,14 +9,8 @@
         
     </div>
     <div class="card-body">
-
-        @if(session()->has('delete'))
-            <div class="aler alert-danger">
-                {{session()->get('delete')}}
-            </div>
-        @endif
-
-        <table class="table table-bordered">
+      @include('admin.alerts.main')
+       <table class="table table-bordered">
             <thead>
                 <th>To'liq nomi</th>
                 <th>Mavzu</th>
@@ -55,7 +49,9 @@
 
             </tbody>
         </table>
-
+        <nav class="blog-pagination justify-content-center d-flex">
+            {{ $links }}
+            </nav>
     </div>
 </div>
 
