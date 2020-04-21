@@ -26,8 +26,9 @@
         <table class="table table-bordered">
             <thead>
                 <th width="100px">Rasm</th>
-                <th>sarlavha</th>
-                <th width="130px">amallar</th>
+                <th>Sarlavha</th>
+                <th width="100">Vaqti</th>
+                <th width="180px">Amallar</th>
             </thead>
             <tbody>
                
@@ -37,21 +38,27 @@
                 <img class="img img-thumbnail" width="80px" src="{{ '/storage/'.$post->thumb }}" alt="{{ $post->title }}">
                     </td>
                     <td> {{$post->title}}  </td>
+                    <td>{{$post->updated_at->format('H:i d/m/Y')}}</td>
                     <td>
-                        <a class="btn btn-sm btn-white float-left " href="{{route('admin.posts.show', $post->id)}}">
-                            <i class="fa fa-eye"></i>
-                        </a>
-                        
-                        <a class="btn float-left btn-sm btn-white" href="{{route('admin.posts.edit', ['id' => $post-> id])}}">
-                            <i class="fa fa-edit"></i> 
-                        </a>
-                        
-                        <form method="POST" action="{{route('admin.posts.destroy', ['id' => $post-> id])}}">
-                            @csrf
-                            @method('delete')
-                            <button class= "btn btn-sm btn-white"> <i class="fa fa-trash"></i></button>
-                        </form>
-                    </td>
+                        <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                         <a target="_blank" href="{{route('admin.posts.show', $post->id)}}" class="btn btn-primary">
+                         <i class="fa fa-eye"></i>Ko'rish</a>
+                            <div class="btn-group" role="group">
+                                <button id="btnGroupDrop1" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                    <a class="dropdown-item" href="{{route('admin.posts.edit', ['id' => $post-> id])}}">
+                                    <i class="fa fa-edit"></i> Taxrirlash
+                                    </a>   
+                                    <form method="POST" action="{{route('admin.posts.destroy', $post->id)}}">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button class="dropdown-item" type="submit"><i class="fa fa-trash"></i>O`chirish</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                   </td>
                 </tr>
                 @endforeach
 
