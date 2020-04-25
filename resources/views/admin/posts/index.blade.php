@@ -11,17 +11,7 @@
     </div>
     <div class="card-body">
 
-        @if(session()->has('success'))
-            <div class="aler alert-success">
-                {{session()->get('success')}}
-            </div>
-        @endif
-
-        @if(session()->has('delete'))
-            <div class="aler alert-danger">
-                {{session()->get('delete')}}
-            </div>
-        @endif
+        @include('admin.alerts.main')
 
         <table class="table table-bordered">
             <thead>
